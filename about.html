@@ -1,403 +1,92 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" data-theme="charcoal" data-build="a1b2c3d4">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>염창 룸싸롱 가격 정보 | 프리미엄 염창 룸싸롱 상세 안내</title>
-    <meta name="description" content="염창 룸싸롱 가격 정보를 데이터 기반으로 정확히 안내드립니다. 염창 지역 최상위 프리미엄 룸싸롱의 합리적 가격, 서비스, 시설에 대한 상세 정보를 제공하는 전문 가이드입니다.">
-    <meta name="keywords" content="염창 룸싸롱, 염창 룸싸롱 가격, 염창룸싸롱, 염창 유흥, 염창 술집, 염창 가라오케, 염창 접대, 염창 비즈니스, 염창 정보">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-raw-concrete">
-    <link rel="canonical" href="https://t3b07-yc-room-pr.vercel.app/">
-    <meta property="og:title" content="염창 룸싸롱 가격 정보 | 프리미엄 염창 룸싸롱 상세 안내">
-    <meta property="og:description" content="염창 룸싸롱 가격 정보를 데이터 기반으로 정확히 안내드립니다. 염창 지역 최상위 프리미엄 룸싸롱의 합리적 가격, 서비스, 시설에 대한 상세 정보를 제공하는 전문 가이드입니다.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://t3b07-yc-room-pr.vercel.app/">
-    <meta property="og:locale" content="ko_KR">
-    <style>
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            font-size: 16px;
-            scroll-behavior: smooth;
-            -webkit-text-size-adjust: 100%;
-        }
-        body {
-            font-family: 'Noto Sans KR', 'Malgun Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: #1a1a1a;
-            color: #e0e0e0;
-            line-height: 1.7;
-            font-weight: 400;
-            min-height: 100vh;
-        }
-        h1, h2, h3, h4 {
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            text-transform: uppercase;
-        }
-        h1 {
-            font-size: clamp(2.2rem, 6vw, 3.8rem);
-            line-height: 1.1;
-            margin-bottom: 1.5rem;
-            color: #f5f5f5;
-            border-left: 6px solid #d4a574;
-            padding-left: 1.2rem;
-        }
-        h2 {
-            font-size: clamp(1.6rem, 4vw, 2.4rem);
-            line-height: 1.2;
-            margin-bottom: 1.2rem;
-            color: #f0f0f0;
-            border-bottom: 3px solid #d4a574;
-            padding-bottom: 0.6rem;
-            display: inline-block;
-        }
-        h3 {
-            font-size: clamp(1.2rem, 2.5vw, 1.6rem);
-            line-height: 1.3;
-            margin-bottom: 0.8rem;
-            color: #d4a574;
-        }
-        p {
-            margin-bottom: 1.2rem;
-            font-size: 1rem;
-            color: #cccccc;
-        }
-        a {
-            color: #d4a574;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.2s ease;
-        }
-        a:hover {
-            color: #f0c8a0;
-            text-decoration: underline;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-        section {
-            padding: 3.5rem 0;
-        }
-        header {
-            background: #111;
-            padding: 1rem 0;
-            border-bottom: 2px solid #d4a574;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-        .logo span {
-            color: #d4a574;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-        nav ul li a {
-            font-size: 0.95rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            padding: 0.3rem 0;
-            border-bottom: 2px solid transparent;
-            transition: border-color 0.2s ease;
-        }
-        nav ul li a:hover {
-            border-bottom-color: #d4a574;
-            text-decoration: none;
-        }
-        .hamburger-menu {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-            background: none;
-            border: none;
-            padding: 0.5rem;
-        }
-        .hamburger-menu span {
-            display: block;
-            width: 28px;
-            height: 3px;
-            background: #d4a574;
-            border-radius: 2px;
-        }
-        .tel-link {
-            display: inline-block;
-            background: #d4a574;
-            color: #111 !important;
-            padding: 0.5rem 1.5rem;
-            font-weight: 700;
-            font-size: 1.1rem;
-            border-radius: 4px;
-            transition: background 0.2s ease, transform 0.2s ease;
-            border: 2px solid #d4a574;
-        }
-        .tel-link:hover {
-            background: #f0c8a0;
-            border-color: #f0c8a0;
-            transform: scale(1.02);
-            text-decoration: none;
-        }
-        @media (max-width: 768px) {
-            .hamburger-menu {
-                display: flex;
-            }
-            nav ul {
-                display: none;
-                flex-direction: column;
-                gap: 1rem;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: #111;
-                padding: 1.5rem;
-                border-bottom: 2px solid #d4a574;
-            }
-            nav ul.active {
-                display: flex;
-            }
-            .tel-link {
-                padding: 0.4rem 1rem;
-                font-size: 1rem;
-            }
-        }
-        /* Card & Layout */
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-        .card {
-            background: #222;
-            border: 1px solid #333;
-            padding: 2rem;
-            border-radius: 8px;
-            transition: border-color 0.2s ease, transform 0.2s ease;
-        }
-        .card:hover {
-            border-color: #d4a574;
-            transform: translateY(-4px);
-        }
-        .card h3 {
-            margin-top: 0;
-        }
-        .card p {
-            font-size: 0.95rem;
-        }
-        .data-badge {
-            display: inline-block;
-            background: #d4a574;
-            color: #111;
-            padding: 0.2rem 0.8rem;
-            font-size: 0.8rem;
-            font-weight: 700;
-            border-radius: 3px;
-            margin-bottom: 0.8rem;
-            text-transform: uppercase;
-        }
-        .price-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 2rem 0;
-        }
-        .price-table th, .price-table td {
-            border: 1px solid #333;
-            padding: 0.8rem 1rem;
-            text-align: left;
-        }
-        .price-table th {
-            background: #2a2a2a;
-            color: #d4a574;
-            font-weight: 700;
-            text-transform: uppercase;
-        }
-        .price-table td {
-            background: #1f1f1f;
-        }
-        .faq-item {
-            border-bottom: 1px solid #333;
-            padding: 1.2rem 0;
-        }
-        .faq-item:last-child {
-            border-bottom: none;
-        }
-        .faq-item h4 {
-            font-size: 1.1rem;
-            color: #f0f0f0;
-            margin-bottom: 0.5rem;
-            cursor: pointer;
-        }
-        .faq-item p {
-            margin-bottom: 0;
-            padding-left: 1rem;
-            border-left: 3px solid #d4a574;
-        }
-        .cta-box {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
-            border: 2px solid #d4a574;
-            padding: 2.5rem;
-            text-align: center;
-            margin: 2rem 0;
-            border-radius: 8px;
-        }
-        .cta-box p {
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
-        }
-        .cta-box .tel-link {
-            font-size: 1.3rem;
-            padding: 0.7rem 2rem;
-        }
-        footer {
-            background: #111;
-            padding: 2rem 0;
-            border-top: 2px solid #d4a574;
-            text-align: center;
-            font-size: 0.85rem;
-            color: #888;
-        }
-        .nav-present {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        .responsive-768 .nav-present {
-            flex-direction: column;
-            gap: 1rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>염창 룸싸롱 가격 — 상세 정보</title>
+  <meta name="description" content="염창 룸싸롱을 이용하려는 방문자를 위해 인원·시간대·목적별 가격 구조와 사전 확인 사항을 데이터 기반으로 정리했습니다.">
+  <meta name="keywords" content="염창 룸싸롱 가격, 염창 룸싸롱 이용 가이드, 염창 룸싸롱 선택 기준">
+  <link rel="canonical" href="https://yeomchang-guide-room.hardcoreroom.com/about.html">
+  <meta property="og:title" content="염창 룸싸롱 가격 — 상세 정보">
+  <meta property="og:description" content="염창 룸싸롱을 이용하려는 방문자를 위해 인원·시간대·목적별 가격 구조와 사전 확인 사항을 데이터 기반으로 정리했습니다.">
+  <meta property="og:url" content="https://yeomchang-guide-room.hardcoreroom.com/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://yeomchang-guide-room.hardcoreroom.com/assets/og-image.jpg">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container nav-present">
-            <div class="logo">YEONGCHANG<span>ROOM</span></div>
-            <button class="hamburger-menu" aria-label="메뉴 열기" onclick="document.querySelector('nav ul').classList.toggle('active')">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <nav>
-                <ul>
-                    <li><a href="/">홈</a></li>
-                    <li><a href="/price">가격</a></li>
-                    <li><a href="/info">정보</a></li>
-                    <li><a href="/faq">FAQ</a></li>
-                    <li><a href="tel:010-1234-5678" class="tel-link">전화 문의</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <h1>염창 룸싸롱 가격 상세 정보</h1>
+    <nav class="n-btn-tzmo">
+      <ul class="menu">
+        <li><a href="/index.html">홈</a></li>
+        <li><a href="/price.html">가격 안내</a></li>
+        <li><a href="/info.html">정보</a></li>
+        <li><a href="/faq.html">FAQ</a></li>
+        <li><a href="/contact.html">연락처</a></li>
+      </ul>
+      <button class="menu-toggle">메뉴</button>
+    </nav>
+  </header>
 
-    <main>
-        <section>
-            <div class="container">
-                <h1>염창 룸싸롱 가격 정보</h1>
-                <p>염창 지역 프리미엄 룸싸롱의 정확한 가격 정보와 서비스 상세를 데이터 기반으로 제공합니다. 2025년 기준 시장 조사와 업계 전문가 분석을 통해 신뢰할 수 있는 정보를 전달합니다.</p>
-                
-                <div class="card-grid">
-                    <div class="card">
-                        <span class="data-badge">데이터 기반</span>
-                        <h3>기본 이용 요금</h3>
-                        <p>염창 룸싸롱의 기본 이용 요금은 시간당 <strong>150,000원 ~ 250,000원</strong>으로, 업소 등급과 시설에 따라 차이가 있습니다. 평균 200,000원 수준으로 타 지역 대비 합리적인 가격대를 형성하고 있습니다.</p>
-                    </div>
-                    <div class="card">
-                        <span class="data-badge">프리미엄 서비스</span>
-                        <h3>VIP 패키지</h3>
-                        <p>프리미엄 VIP 룸 이용 시 최소 <strong>400,000원</strong>부터 시작하며, 맞춤형 서비스, 최상급 주류, 전용 마스터가 포함됩니다. 비즈니스 접대에 최적화된 옵션입니다.</p>
-                    </div>
-                    <div class="card">
-                        <span class="data-badge">부가 비용</span>
-                        <h3>주류 및 안주</h3>
-                        <p>양주 기준 <strong>300,000원 ~ 600,000원</strong>, 안주는 50,000원 ~ 150,000원 수준입니다. 사전 예약 시 패키지 할인 혜택을 제공하는 업소가 다수입니다.</p>
-                    </div>
-                </div>
+  <main class="q-top-axq1">
+    <!-- 개요 -->
+    <section id="overview">
+      <h2>1. 염창 룸싸롱 이용 개요</h2>
+      <p>염창은 서울 외곽에 위치하면서도 접근성이 뛰어난 지역으로, 다양한 연령층과 직업군이 이용하는 룸싸롱이 다수 존재합니다. 이러한 시설은 고객의 목적에 따라 서비스 수준과 가격이 크게 달라지기 때문에, 사전에 충분한 정보를 확보하는 것이 필수적입니다.</p>
+      <p>본 페이지에서는 인원·시간대·방문 목적별로 구분된 가격 구조와, 이용 전 반드시 점검해야 할 체크리스트를 제시합니다. 데이터는 현지 매장 운영 통계와 고객 리뷰(익명 집계) 기반으로 작성했으며, 최신 트렌드를 반영하기 위해 정기적으로 업데이트됩니다.</p>
+    </section>
 
-                <h2>상세 가격표</h2>
-                <table class="price-table">
-                    <thead>
-                        <tr>
-                            <th>서비스 항목</th>
-                            <th>가격 범위</th>
-                            <th>비고</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>기본 룸 (2시간)</td>
-                            <td>300,000원 ~ 500,000원</td>
-                            <td>인원 4인 기준</td>
-                        </tr>
-                        <tr>
-                            <td>프리미엄 룸 (2시간)</td>
-                            <td>500,000원 ~ 800,000원</td>
-                            <td>인원 6인 기준, 전용 마스터 포함</td>
-                        </tr>
-                        <tr>
-                            <td>VIP 룸 (3시간)</td>
-                            <td>1,000,000원 ~ 1,500,000원</td>
-                            <td>최상급 시설, 맞춤 서비스</td>
-                        </tr>
-                        <tr>
-                            <td>주류 패키지 (양주 1병)</td>
-                            <td>300,000원 ~ 600,000원</td>
-                            <td>브랜드별 상이</td>
-                        </tr>
-                        <tr>
-                            <td>안주 세트</td>
-                            <td>50,000원 ~ 150,000원</td>
-                            <td>고급 안주 구성</td>
-                        </tr>
-                    </tbody>
-                </table>
+    <!-- 가격 구조 -->
+    <section id="pricing">
+      <h2>2. 기본 가격 구조</h2>
+      <p>염창의 대부분 룸싸롱은 1인 기준 최소 30,000원에서 시작합니다. 인원수가 증가함에 따라 1인당 평균 단가는 다소 낮아지는 경향이 있으며, 일반적으로 2~4인일 경우 1인당 25,000원~35,000원, 5인 이상은 1인당 20,000원~30,000원 수준으로 책정됩니다.</p>
+      <p>시간대에 따라 추가 요금이 부과됩니다. 평일 오후 12시~18시(주중 라이트 타임)는 기본 요금에 10% 가산이 적용되며, 저녁 18시 이후(프라임 타임)와 주말(토·일)은 20%~30% 가산 요금이 적용됩니다. 이러한 가산 요금은 매장의 입지·인테리어 수준에 따라 차이가 있을 수 있습니다.</p>
+    </section>
 
-                <h2>염창 룸싸롱 서비스 특징</h2>
-                <div class="card-grid">
-                    <div class="card">
-                        <h3>시설 및 환경</h3>
-                        <p>염창 룸싸롱은 최신 인테리어와 프라이빗한 공간을 자랑합니다. 방음 시설, 최신 음향 시스템, 고급 가구가 비치되어 있어 비즈니스 미팅 및 접대에 적합합니다.</p>
-                    </div>
-                    <div class="card">
-                        <h3>마스터 서비스</h3>
-                        <p>전문 마스터가 상주하여 고객 맞춤형 서비스를 제공합니다. 엄격한 교육을 받은 스태프가 쾌적한 분위기에서 최상의 경험을 보장합니다.</p>
-                    </div>
-                    <div class="card">
-                        <h3>예약 시스템</h3>
-                        <p>사전 예약 시 원하는 시간대와 룸 타입을 선택할 수 있으며, 긴급 예약도 가능합니다. 전화 문의를 통해 실시간 가용 여부를 확인하세요.</p>
-                    </div>
-                </div>
+    <!-- 인원·시점별 선택 가이드 -->
+    <section id="group-time">
+      <h2>3. 인원·시간대별 선택 가이드</h2>
+      <p><strong>소규모(1~2인) </strong>는 개인적인 휴식이나 업무 회의 등 조용한 환경을 선호하는 경우가 많습니다. 이때는 일반실보다 프라이빗한 소형 룸을 선택하고, 라이트 타임에 예약하면 비용 효율성을 극대화할 수 있습니다.</p>
+      <p><strong>중규모(3~4인) </strong>는 회식이나 친목 모임에 적합합니다. 이 경우 다목적 라운지형 방을 활용하면 좌석 배치와 음향 설비를 효율적으로 사용할 수 있습니다. 프라임 타임에 예약하면 추가 인원 할인(+5~10%)이 적용되는 매장을 찾아보는 것이 현명합니다.</p>
+      <p><strong>대규모(5인 이상) </strong>는 파티룸 형태의 대형 스위트룸을 이용하게 됩니다. 대형 방은 기본 요금이 높은 편이지만, 인당 단가가 낮아 전체 비용을 절감할 수 있습니다. 특히 주말 저녁에 인당 20,000원 이하로 이용 가능한 옵션이 존재하니, 사전 문의를 권장합니다.</p>
+    </section>
 
-                <h2>자주 묻는 질문</h2>
-                <div class="faq-item">
-                    <h4>염창 룸싸롱 예약은 어떻게 하나요?</h4>
-                    <p>전화 문의를 통해 예약 가능합니다. 원하는 날짜, 시간, 인원을 알려주시면 최적의 룸을 추천해 드립니다. 사전 예약 시 할인 혜택이 적용됩니다.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>가격은 시간당인가요?</h4>
-                    <p>기본적으로 시간당 요금제를 적용하며, 패키지 이용 시 고정 요금으로 이용 가능합니다. 자세한 내용은 전화 상담을 통해 확인하세요.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>주류는 별도인가요?</h4>
-                    <p>네, 주류와 안주는 별도 비용입니다. 다양한 브랜드의 양주와 고급 안주를 합리적인 가격에 제공합니다. 패키지 상품을 이용하시면 할인 혜택이 있습니다.</p>
-                </div>
-                <div class="faq-item">
-                    <h4>비즈니스 접대에 적합한가요?</h4>
-                    <p>염창 룸싸롱은 비즈니스 접대에 최적화된 시설
+    <!-- 목적별 이용 팁 -->
+    <section id="purpose">
+      <h2>4. 방문 목적별 이용 팁</h2>
+      <p><strong>비즈니스 미팅</strong>을 목적으로 할 경우, 저조도 조명과 방음 설비가 구비된 회의 전용 객실을 선택하십시오. 이때는 음료 제공 여부와 무선 인터넷 속도가 계약서에 명시되어 있는지 확인하는 것이 중요합니다.</p>
+      <p><strong>친구·동료와의 사교</strong>를 위해서는 다목적 라운지와 바 형태가 결합된 공간이 적합합니다. 이때는 주류 라인업과 안주 제공 서비스가 포함된 패키지를 선택하면 예상 지출을 보다 정확히 예측할 수 있습니다.</p>
+      <p><strong>개인 휴식·스트레스 해소</strong>를 위한 경우, 조용한 소형 룸과 맞춤형 안마·마사지 옵션을 제공하는 매장을 우선 고려합니다. 이러한 서비스는 시간당 추가 비용이 발생하므로, 사전 견적을 받아 보시는 것이 좋습니다.</p>
+    </section>
+
+    <!-- 사전 확인 체크리스트 -->
+    <section id="checklist">
+      <h2>5. 방문 전 확인해야 할 체크리스트</h2>
+      <p>① <strong>운영 시간</strong> – 매장의 영업 종료 시점이 늦은 경우라도 프라임 타임에 한정된 서비스가 중단될 수 있습니다. 공식 웹사이트나 전화 문의로 정확한 영업 시간을 확인하세요.</p>
+      <p>② <strong>예약 방식</strong> – 온라인 예약, 전화 예약, 현장 대기 중 어떤 방식을 지원하는지 파악하고, 특히 라이트 타임에 할인 예약이 가능한지 확인합니다.</p>
+      <p>③ <strong>부가 서비스</strong> – 음료, 안주, 추가 마사지, 객실 청소 등 부가 서비스는 별도 요금이 부과됩니다. 서비스 목록과 가격표를 미리 받아두면 불필요한 추가 비용을 방지할 수 있습니다.</p>
+      <p>④ <strong>보안·프라이버시</strong> – 입장 전 사진 촬영 제한, CCTV 위치, 방음 설비 유무를 확인하고, 개인 정보 보호 정책이 명시된 매장을 선택합니다.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <h2>6. 자주 묻는 질문 (FAQ)</h2>
+      <h3>Q1. 최소 이용 시간은 어떻게 되나요?</h3>
+      <p>대부분의 매장은 최소 1시간 이용을 기준으로 하며, 30분 단위 추가 연장은 10% 가산 요금이 적용됩니다. 일부 고급 라운지는 최소 2시간 예약이 필요하니 사전 확인이 필요합니다.</p>
+
+      <h3>Q2. 결제 방식은 어떤 것이 가능한가요?</h3>
+      <p>현금, 신용카드, 모바일 결제(Kakao Pay, Naver Pay) 모두 가능하지만, 일부 매장은 현금 전용 또는 카드 결제 시 할인이 적용되기도 합니다. 결제 전 할인 정책을 반드시 문의하십시오.</p>
+
+      <h3>Q3. 예약 취소 시 환불은 어떻게 이루어지나요?</h3>
+      <p>라이트 타임(평일 낮) 예약을 24시간 전 취소하면 전액 환불이 가능하며, 프라임 타임(저녁·주말) 예약은 12시간 전까지 50% 환불 정책을 적용합니다. 매장마다 차이가 있으니, 취소 정책을 문서로 받아 두는 것이 좋습니다.</p>
+
+      <h3>Q4. 음주가 가능한가요?</h3>
+      <p>대부분 매장은 주류 판매 면허를 보유하고 있어 음주가 가능하지만, 연령 확인 절차가 엄격하게 진행됩니다. 미성년자는 입장이 제한되며, 음주 시 과음 방지를 위한 정책을 운영합니다.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 염창 룸싸롱 가이드. 모든 권리 보유.</p>
+  </footer>
 </body>
 </html>
